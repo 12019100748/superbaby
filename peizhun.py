@@ -3,7 +3,7 @@ import vtk
 import numpy as np
 import open3d as o3d
 from vtk.util import numpy_support
-
+#该代码用于将镜像后的对侧图像和掩码与当前侧的图像和掩码进行匹配
 def mirror_ct_and_mask(ct_path, mask_path, output_ct, output_mask):
     """镜像处理CT和掩膜"""
     # 镜像CT
