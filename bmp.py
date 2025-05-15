@@ -71,6 +71,7 @@
 # sitk.WriteImage(image_sitk, nii_output_path, True)
 
 # print(f"3D NIfTI 数据已保存为: {nii_output_path}")
+# 将标注好的mask的数据在mimics中将背景（窗宽窗位都调整黑色）保存为.bmp格式。用照片查看器，取出每个颜色。然后分别映射为1，2，3等标签
 
 import os
 import SimpleITK as sitk
